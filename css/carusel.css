@@ -1,0 +1,158 @@
+.hola {
+	box-sizing: border-box;
+}
+
+.hola {
+	background: #f6f6f8;
+	color: #fff;
+	font-family:"open sans";
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+}
+.hola h1{
+    color: black;
+}
+
+.contenedor {
+	max-width: 1200px;
+	width: 90%;
+	margin: auto;
+}
+
+/* --- --- CONTENEDOR PRINCIPAL --- --- */
+
+.contenido-principal {
+	margin-bottom: 100px;
+	display: flex;
+	align-items: center;
+}
+
+.contenido-principal__imagen {
+	margin-top: 10px;
+	vertical-align: top;
+	margin-right: 20px;
+	width: 50%;
+	max-width: 550px;
+}
+
+.contenido-principal__contenedor {
+	width: 50%;
+}
+
+.contenido-principal__titulo {
+	font-weight: normal;
+	font-size: 28px;
+}
+
+.contenido-principal__resumen {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 22px;
+	color: #030303;
+}
+
+
+
+.contenido-principal__contenedor h3{
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 50px;
+    color: black;
+}
+.contenido-principal__contenedor h3 span{
+    background: #18161a;
+    color:#fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    box-shadow: 0 0 6px 0 rgba(0,0, 0, .5);
+    margin-right: 10px;
+    
+}
+
+/* --- --- CAROUSEL --- --- */
+.carousel__contenedor {
+	position: relative;
+}
+.carousel__elemento img{
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+	padding: 10px;
+
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: rgb(44, 42, 42);
+	opacity: 20%;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+	opacity: 100%;
+}
+
+.carousel__anterior {
+	left: -30px;
+}
+
+.carousel__siguiente {
+	right: -30px;
+}
+
+.carousel__lista {
+	overflow: hidden;
+}
+
+.carousel__elemento {
+	text-align: center;
+}
+.carousel__elemento p{
+	color: black;
+    padding: 8px;
+}
+
+.carousel__indicadores .glider-dot {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: rgb(7, 7, 7);
+	opacity: .2;
+	border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+	opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active {
+	opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+	hola {
+		padding: 40px 0;
+	}
+
+	.contenido-principal {
+		flex-direction: column;
+	}
+
+	.contenido-principal > * {
+		width: 100%;
+	}
+}
